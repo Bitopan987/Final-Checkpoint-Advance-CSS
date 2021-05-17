@@ -1,0 +1,145 @@
+/* ---------------------------------------------------------------
+Media Queries for header
+--------------------------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+  .nav_bar {
+    position: fixed;
+    height: 5rem;
+    background-color: $pure;
+    box-shadow: 0 5px 4px rgba($color: #000000, $alpha: 0.2);
+    top: 0;
+    z-index: 100;
+  }
+  .nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 13rem;
+    z-index: 9;
+  }
+  .nav-menu li a {
+    font-size: 1.2rem;
+    color: $pure;
+  }
+  .nav-menu li a:hover {
+    color: $secondary;
+  }
+  .brand,
+  .bars {
+    position: fixed;
+    top: 1rem;
+    z-index: 99;
+  }
+  .brand {
+    left: 2rem;
+    top: 1.5rem;
+  }
+  .bars {
+    right: 2rem;
+    color: $secondary;
+  }
+  .nav-menu li {
+    margin: 1rem 0;
+  }
+  #toggle:checked ~ .nav {
+    display: inline-block;
+  }
+  .bars {
+    font-size: 2rem;
+    color: $primary;
+    display: inline-block;
+  }
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* ---------------------------------------------------------------
+Media Queries general
+--------------------------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+  .flex-100 {
+    flex: 0 1 100%;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .sm-flex-100 {
+    flex: 0 1 100%;
+  }
+}
+
+/* ---------------------------------------------------------------
+Media Queries Sections
+--------------------------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+  .hero {
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+    .img-div {
+      text-align: center;
+    }
+  }
+  .about {
+    padding-top: 3rem;
+    padding-bottom: 0;
+    text-align: center;
+    .btn {
+      margin-bottom: 1rem;
+    }
+  }
+  .service {
+    padding: 3rem 0;
+  }
+  .blog {
+    padding: 3rem 0;
+  }
+  .skill {
+    h2 {
+      padding-bottom: 2rem;
+    }
+    &_content {
+      padding-bottom: 2rem;
+      text-align: center;
+    }
+  }
+  .blog {
+    h2 {
+      padding-bottom: 2rem;
+    }
+  }
+  .contact-sec {
+    padding: 3rem 0;
+    .contact {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+  }
+}
+
+/* ---------------------------------------------------------------
+project page
+--------------------------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+  .project {
+    padding: 2rem 0;
+    .all-works {
+      grid-template-columns: 1fr;
+      margin: 1rem 0;
+      grid-template-rows: 17rem 17rem 17rem 17rem 17rem 17rem;
+      grid-gap: 3rem;
+    }
+  }
+}

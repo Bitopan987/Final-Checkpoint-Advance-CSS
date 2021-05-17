@@ -1,0 +1,121 @@
+.project {
+  .all-works {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px 400px 400px;
+    grid-gap: 50px;
+  }
+  .work {
+    border-radius: 10px;
+    border: 2px solid #343a40;
+    text-align: center;
+    cursor: grab;
+  }
+  .work a {
+    color: $dark;
+    background: $pure;
+    vertical-align: bottom;
+    margin: 38% 3%;
+    padding: 10px 0;
+    border-radius: 10px;
+    text-align: center;
+    width: 100px;
+    border: 4px double $dark;
+    display: none;
+  }
+
+  .work:hover .effect {
+    display: inline-block;
+  }
+
+  .work,
+  .work a {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .work:hover {
+    box-shadow: 0 0 10px 0 #000;
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+  }
+
+  .work a:hover {
+    font-size: 1.1em;
+    box-shadow: 0 0 10px 5px #000;
+    border: 4px solid #fff;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    background: black;
+    color: $pure;
+  }
+  .work-1 {
+    background-image: linear-gradient(
+        41deg,
+        #e86b7595,
+        #e86b7595 50%,
+        #e8172995 50%,
+        #e8172995
+      ),
+      url("../images/work-1.PNG");
+    background-size: 100%;
+  }
+  .work-2 {
+    background-image: linear-gradient(
+        41deg,
+        #81f1ac95,
+        #81f1ac95 50%,
+        #123c2295 50%,
+        #123c2295
+      ),
+      url("../images/work-2.PNG");
+    background-size: 100%;
+  }
+  .work-3 {
+    background-image: linear-gradient(
+        41deg,
+        #f181c695,
+        #f181c695 50%,
+        #b5368495 50%,
+        #b5368495
+      ),
+      url("../images/work-3.PNG");
+    background-size: 100%;
+  }
+  .work-4 {
+    background-image: linear-gradient(
+        41deg,
+        #14adfa95,
+        #14adfa95 50%,
+        #073a5395 50%,
+        #073a5395
+      ),
+      url("../images/work-4.PNG");
+    background-size: 100%;
+  }
+  .work-5 {
+    background-image: linear-gradient(
+        41deg,
+        #fa611495,
+        #fa611495 50%,
+        #a7400d95 50%,
+        #a7400d95
+      ),
+      url("../images/work-5.PNG");
+    background-size: 100%;
+  }
+  .work-6 {
+    background-image: linear-gradient(
+        41deg,
+        #77191b95,
+        #77191b95 50%,
+        #78393a95 50%,
+        #78393a95
+      ),
+      url("../images/work-6.PNG");
+    background-size: 100%;
+  }
+}

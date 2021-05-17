@@ -1,0 +1,338 @@
+/* ---------------------------------------------------------------
+Import partials
+--------------------------------------------------------------- */
+
+@import "reset";
+@import "vars";
+@import "general";
+@import "modular";
+@import "header";
+
+/* ---------------------------------------------------------------
+Hero Section
+--------------------------------------------------------------- */
+
+.hero {
+  color: $pure;
+  background-image: url("/assets/images/bg-1.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  .container {
+    height: 100vh;
+  }
+  &_content {
+    p {
+      padding: 0.5rem 0;
+      font-size: 1.4rem;
+    }
+  }
+  .nav-icon {
+    padding-top: 1rem;
+  }
+  .nav-icon li {
+    padding-right: 5%;
+    a {
+      color: $pure;
+      font-size: 2rem;
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+  .alt {
+    color: $primary;
+  }
+}
+
+.img-div {
+  margin-right: 2rem;
+  img {
+    border-radius: 50%;
+    border: 7px double #fff;
+    box-shadow: 0 0 15px #fff;
+    height: 16rem;
+    width: 16rem;
+    &:hover {
+      border: 7px solid #fff;
+      box-shadow: 0 0 15px 5px #fff;
+    }
+  }
+}
+
+/* ---------------------------------------------------------------
+About Section
+--------------------------------------------------------------- */
+
+.about {
+  color: $pure;
+  background-color: $secondary;
+  h2 {
+    padding-bottom: 3rem;
+    color: $dark;
+  }
+  img {
+    border-radius: 6px;
+  }
+  &_content {
+    padding: 2rem;
+    h3 {
+      font-size: 2rem;
+    }
+    p {
+      padding: 0.5rem 0 2rem 0;
+      color: $secondary;
+      font-size: 1.2rem;
+    }
+    .btn {
+      margin-right: 1rem;
+    }
+  }
+  .container {
+    background-color: $primary;
+    padding: 2rem;
+    border-radius: 5px;
+  }
+}
+
+/* ---------------------------------------------------------------
+Service Section
+--------------------------------------------------------------- */
+
+.service {
+  &_content {
+    padding-top: 4rem;
+  }
+  &_col {
+    margin-bottom: 2.5rem;
+    text-align: center;
+    background-color: $pure;
+    padding: 2rem 1rem;
+    color: $dark;
+    position: relative;
+    margin-bottom: 3.5rem;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    transition: all 500ms ease-in;
+    &:hover {
+      transform: scale(1.07);
+    }
+    h5 {
+      font-weight: 700;
+      font-size: 1rem;
+      padding-top: 1.5rem;
+    }
+    p {
+      font-size: 0.9rem;
+      padding: 0.5rem 0;
+    }
+
+    img {
+      width: 2.5rem;
+    }
+  }
+  &_icon {
+    position: absolute;
+    top: -2rem;
+    left: 50%;
+    transform: translatex(-50%);
+    background-color: $primary;
+    border-radius: 50%;
+    padding: 12px 15px;
+    border: 2px solid $text;
+    &:hover {
+      background-color: $secondary;
+    }
+  }
+}
+
+/* ---------------------------------------------------------------
+Skills Section
+--------------------------------------------------------------- */
+
+.skill {
+  background-color: $secondary;
+  h2 {
+    padding-bottom: 4rem;
+
+    &::after {
+      content: "- what I know -";
+      display: block;
+      font-size: 1.4rem;
+      color: $primary;
+    }
+  }
+  &_content {
+    h3 {
+      padding: 1rem 0;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+  }
+  .my-skill {
+    background: $pure;
+    padding: 2rem;
+    strong {
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+    h2 {
+      color: $pure;
+      padding-top: 1rem;
+    }
+    p {
+      color: $pure;
+      font-size: 0.9rem;
+      padding: 0.4rem 0;
+    }
+    meter {
+      width: 100%;
+      -moz-appearance: none;
+      height: 16px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    meter::-webkit-meter-bar {
+      box-shadow: 0 5px 5px -5px #999 inset;
+      background: $pure;
+      background-size: 100% 100%;
+    }
+    meter::-webkit-meter-optimum-value {
+      box-shadow: 0 5px 5px -5px #999 inset;
+      background: #1a1710;
+      background-size: 100% 100%;
+    }
+    .skills-percent {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+/* ---------------------------------------------------------------
+Blog Section
+--------------------------------------------------------------- */
+
+.blog {
+  h2 {
+    padding-bottom: 4rem;
+  }
+  .blog-1 {
+    display: block;
+
+    background: linear-gradient(34deg, $primary, #55114490);
+    margin: 5% auto;
+    text-align: center;
+    border-radius: 10px;
+    padding-bottom: 1rem;
+  }
+  .blog-h3 {
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    opacity: 1;
+    color: $pure;
+  }
+  .fa-medium {
+    position: relative;
+    top: -78px;
+    font-size: 3em;
+    opacity: 0;
+    color: $pure;
+  }
+  .medium {
+    font-size: 0.7em;
+    opacity: 1;
+    font-style: italic;
+    color: $pure;
+    font-size: 1rem;
+  }
+  .blog-1:hover {
+    background: linear-gradient(
+        38deg,
+        #77191b95,
+        #77191b95 50%,
+        #78393a95 50%,
+        #78393a95
+      ),
+      linear-gradient(
+        142deg,
+        #14adfa95,
+        #14adfa95 50%,
+        #073a5395 50%,
+        #073a5395
+      );
+  }
+  .blog-1:hover .blog-h3 {
+    opacity: 0;
+  }
+  .blog-1:hover .fa-medium {
+    opacity: 1;
+  }
+  .blog-1:hover .medium {
+    opacity: 0;
+  }
+}
+
+/* ---------------------------------------------------------------
+Contact Section
+--------------------------------------------------------------- */
+
+.contact-sec {
+  background-color: $secondary;
+  h4 {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    color: $primary;
+  }
+  .sec-5-flex {
+    justify-content: space-around;
+    padding: 5% 10px;
+  }
+  .tweet-sec {
+    height: 100vh;
+    overflow-y: auto;
+  }
+  .twitter-timeline {
+    border-radius: 15px;
+  }
+  .tweet-sec,
+  .contact {
+    width: 40%;
+  }
+
+  .form input,
+  .form textarea {
+    width: 100%;
+    display: block;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    padding: 0.8rem;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid #ddd8d8;
+  }
+
+  .form textarea {
+    font-size: 1.4rem;
+    color: #727070;
+  }
+}
+
+/*=======================================*
+                scroll bar
+*========================================*/
+
+.tweet-sec::-webkit-scrollbar {
+  width: 23px;
+}
+.tweet-sec::-webkit-scrollbar-track {
+  background: #a4a1a1;
+  box-shadow: inset 0 0 3px 2px $primary;
+  border-radius: 50px;
+}
+
+@import "project";
+@import "footer";
+@import "mediaquery";

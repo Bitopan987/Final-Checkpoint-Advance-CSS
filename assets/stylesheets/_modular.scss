@@ -1,0 +1,106 @@
+/* ---------------------------------------------------------------
+Modular Classes
+--------------------------------------------------------------- */
+.flex {
+  display: flex;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-30 {
+  flex: 0 1 30%;
+}
+
+.flex-48 {
+  flex: 0 1 48%;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.container {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.padding {
+  padding: 5rem 0;
+}
+
+.center {
+  text-align: center;
+}
+
+#active {
+  color: $dark;
+  background-color: $secondary;
+  &:hover {
+    color: black;
+  }
+}
+.top_section {
+  background-image: url(/assets/images/bg-3.jpg);
+  background-attachment: fixed;
+  padding: 8rem 0;
+  color: $pure;
+  h1 {
+    padding-bottom: 1rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
+.btn {
+  padding: 0.5rem 1.3rem;
+  border-radius: 25px;
+  display: inline-block;
+  transition: all 0.3s ease;
+
+  &-primary {
+    color: $pure;
+    background-color: #5dceb7;
+    &:hover {
+      color: $primary;
+      background-color: $secondary;
+    }
+  }
+  &-secondary {
+    background-color: $primary;
+    color: $pure;
+    padding: 0.7rem 2rem;
+    font-size: 1rem;
+    line-height: 1;
+    margin-top: 1.3rem;
+
+    border: 2px solid $primary;
+    &:hover {
+      color: $primary;
+      background-color: $secondary;
+    }
+  }
+}

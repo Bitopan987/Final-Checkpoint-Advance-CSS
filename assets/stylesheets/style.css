@@ -288,8 +288,6 @@ Modular Classes
 }
 
 .top_section {
-  background-image: url(../images/bg-3.jpg);
-  background-attachment: fixed;
   padding: 8rem 0;
   color: #fff;
 }
@@ -300,6 +298,30 @@ Modular Classes
 
 .top_section p {
   font-size: 1.2rem;
+}
+
+.project_top {
+  background-image: url(../images/bg-3.jpg);
+  background-attachment: fixed;
+}
+
+.contact_top {
+  background-image: url(../images/bg-5.png);
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.gallery_top {
+  background-image: url(../images/raychan-kJQ6cDyodAM-unsplash.jpg);
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.blog_top {
+  background-image: url(../images/janko-ferlic-sfL_QOnmy00-unsplash.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
 .btn {
@@ -491,16 +513,16 @@ Service Section
   color: #000000;
   position: relative;
   margin-bottom: 3.5rem;
-  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  -webkit-transition: all 500ms ease-in;
-  transition: all 500ms ease-in;
+  -webkit-transition: all 400ms ease-in;
+  transition: all 400ms ease-in;
 }
 
 .service_col:hover {
-  -webkit-transform: scale(1.07);
-          transform: scale(1.07);
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-box-shadow: 0 0 5px 0 #1abc9c;
+          box-shadow: 0 0 5px 0 #1abc9c;
 }
 
 .service_col h5 {
@@ -716,10 +738,12 @@ Contact Section
 /*=======================================*
                 scroll bar
 *========================================*/
+.gallery_section::-webkit-scrollbar,
 .tweet-sec::-webkit-scrollbar {
   width: 23px;
 }
 
+.gallery_section::-webkit-scrollbar,
 .tweet-sec::-webkit-scrollbar-track {
   background: #a4a1a1;
   -webkit-box-shadow: inset 0 0 3px 2px #1abc9c;
@@ -818,6 +842,136 @@ Contact Section
 .project .work-6 {
   background-image: linear-gradient(41deg, #77191b95, #77191b95 50%, #78393a95 50%, #78393a95), url("../images/work-6.PNG");
   background-size: 100%;
+}
+
+/* Contact Section */
+.contact_section .contact_text {
+  padding-bottom: 2rem;
+  font-size: 1.2rem;
+  color: #c0cad3;
+}
+
+.contact_section .contact_col {
+  padding: 2.5rem;
+  text-align: center;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+}
+
+.contact_section .contact_col:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.contact_section .contact_col p {
+  color: #c0cad3;
+}
+
+.contact_section .contact_col h5 a {
+  color: #c0cad3;
+  font-weight: 300;
+}
+
+.contact_section .contact_icon {
+  background-color: #1abc9c;
+  padding: 1.2rem 1.8rem;
+  display: inline-block;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.9rem;
+  margin-bottom: 1rem;
+}
+
+.contact_section h3 {
+  padding-bottom: 2rem;
+}
+
+.contact_section .location {
+  height: 20rem;
+  width: 100%;
+  margin-bottom: 3rem;
+  border-radius: 6px;
+}
+
+/* Gallery */
+.gallery {
+  background-color: #f2f4f1;
+}
+
+.gallery .gallery_section {
+  overflow: auto;
+  height: 100vh;
+}
+
+.gallery .col_1 {
+  padding-right: 0.4rem;
+}
+
+.gallery img {
+  width: 100%;
+  -webkit-box-shadow: 0 0 5px #f2f4f1;
+          box-shadow: 0 0 5px #f2f4f1;
+}
+
+/*=======================================*
+              Blog Section
+*========================================*/
+.blog-article .article-content {
+  background-color: #f2f4f1;
+  padding: 1rem 1rem 2rem 1rem;
+  margin-bottom: 1.8rem;
+  border-radius: 5px;
+  -webkit-transition: all 400ms ease-in;
+  transition: all 400ms ease-in;
+}
+
+.blog-article .article-content:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.blog-article .article-content h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.blog-article .article-content p {
+  padding: 0.5rem 0 1rem 0;
+}
+
+.blog-article .btn-next {
+  margin-top: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blog-article .btn-next li {
+  background-color: #1abc9c;
+  margin-left: 0.4rem;
+  height: 2rem;
+  width: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.blog-article .btn-next li a {
+  color: #fff;
 }
 
 /* ---------------------------------------------------------------
@@ -964,7 +1118,7 @@ Media Queries general
 }
 
 /* ---------------------------------------------------------------
-Media Queries Sections
+Media Queries Home Page
 --------------------------------------------------------------- */
 @media screen and (max-width: 768px) {
   .hero {
@@ -1022,5 +1176,12 @@ project page
         grid-template-rows: 17rem 17rem 17rem 17rem 17rem 17rem;
     grid-gap: 3rem;
   }
+}
+
+/* ---------------------------------------------------------------
+Media Queries Contact Page
+--------------------------------------------------------------- */
+.contact_col {
+  margin-bottom: 2rem;
 }
 /*# sourceMappingURL=style.css.map */

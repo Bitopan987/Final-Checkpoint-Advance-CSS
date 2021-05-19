@@ -1,0 +1,16 @@
+/* Gallery */
+
+.gallery {
+  background-color: $secondary;
+  .gallery_section {
+    overflow: auto;
+    height: 100vh;
+  }
+  .col_1 {
+    padding-right: 0.4rem;
+  }
+  img {
+    width: 100%;
+    box-shadow: 0 0 5px $secondary;
+  }
+}

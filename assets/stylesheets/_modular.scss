@@ -64,8 +64,6 @@ Modular Classes
   }
 }
 .top_section {
-  background-image: url(../images/bg-3.jpg);
-  background-attachment: fixed;
   padding: 8rem 0;
   color: $pure;
   h1 {
@@ -75,6 +73,31 @@ Modular Classes
     font-size: 1.2rem;
   }
 }
+
+.project_top {
+  background-image: url(../images/bg-3.jpg);
+  background-attachment: fixed;
+}
+
+.contact_top {
+  background-image: url(../images/bg-5.png);
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.gallery_top {
+  background-image: url(../images/raychan-kJQ6cDyodAM-unsplash.jpg);
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.blog_top {
+  background-image: url(../images/janko-ferlic-sfL_QOnmy00-unsplash.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
 .btn {
   padding: 0.5rem 1.3rem;
   border-radius: 25px;

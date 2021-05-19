@@ -80,7 +80,7 @@ Media Queries general
 }
 
 /* ---------------------------------------------------------------
-Media Queries Sections
+Media Queries Home Page
 --------------------------------------------------------------- */
 
 @media screen and (max-width: 768px) {
@@ -142,4 +142,12 @@ project page
       grid-gap: 3rem;
     }
   }
+}
+
+/* ---------------------------------------------------------------
+Media Queries Contact Page
+--------------------------------------------------------------- */
+
+.contact_col {
+  margin-bottom: 2rem;
 }
